@@ -1,0 +1,98 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nos plats.css">
+    <link rel="stylesheet" href="../css/panier.css">
+    <title> Panier | Foodorama</title>
+
+    <script src="../js/panier.js" defer></script>
+</head>
+
+<body>
+    <div class='top'>
+        <div class='top_left'>
+            <a href='index.html'>
+                <p class="logo">Foodorama</p>
+            </a>
+        </div>
+        <div class='top_center'>
+            <ul class='navbar'>
+                <a href='Nos plats.html'>
+                    <li class='pointer'>Nos plats</li>
+                </a>
+                <a href='panier.html'>
+                    <li class='pointer'>Panier et commandes</li>
+                </a>
+                <a href='a propos.html'>
+                    <li class='pointer'>A propos</li>
+                </a>
+            </ul>
+        </div>
+        <div class='top_right'>
+            <input type="button" value="Commander" class="form_button pointer" />
+        </div>
+    </div>
+
+    <div class='page_title'>Panier et commandes</div>
+    <div class='banniere'>
+        <div class='form_container'>
+            <br />
+            Nom :
+            <br />
+            <input type="text" placeholder="Entrez le nom" id="nom" class="text_input" onChange="SetData(e)" />
+            <br />
+            <br />
+            Adresse :
+            <br />
+            <input type="text" placeholder="Entrez l'adresse'" id="adresse" class="text_input" />
+            <br />
+            <br />
+            Produits :
+            <br />
+            <div class='inline_flex'>
+                <input type="checkbox" id="Pizza" />
+                Pizza
+            </div>
+            <div class='inline_flex'>
+                <input type="checkbox" id="Pancakes" />
+                Pancakes
+            </div>
+            <div class='inline_flex'>
+                <input type="checkbox" id="Buritos" />
+                Buritos
+            </div>
+            <br />
+            <br />
+            <input type="button" value="Valider" id="valider" class="form_button pointer" />
+
+        </div>
+
+        <div>
+            <div class='page_title'>Bilan</div>
+            <table id="bilan">
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Produits</th>
+                <th></th>
+                <tr></tr>
+            </table>
+            <br />
+            <br />
+
+        </div>
+
+    </div>
+
+    <div class='footer'>
+        Foodorama | Tous droits réservés
+    </div>
+
+</body>
+
+</html>

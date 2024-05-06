@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./polices/Poppins-Regular.ttf")
+}
+
+body {
+    font-family: "Poppins";
+    background-color: #F9F2E2;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 14px;
+    transition: 0.5s;
+    /*color: white;*/
+
+}
+
+li:hover {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+ul {
+    color : white;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.top {
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    align-items: center;
+    background-color: black;
+    opacity: 70%;
+}
+
+.top_left {
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.top_right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logo {
+    margin-left: 5%;
+    width: 90%;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.logo:hover {
+    color: #D37E57;
+    transition: 0.5;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.center_container {
+    display: flex;  /* lorsque c'est flex on dispose les elements de maniere flexible */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+}
+
+.searchbar {
+    width: 50%;
+    height: 7vh;
+
+    border: none;
+    padding-left: 3%;
+}
+
+.searchbutton {
+    background-color: #D37E57;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    height: 7vh;
+    text-align: center;
+    border: none;
+
+}
+
+.searchbutton:hover {
+    transition: 0.5s;
+    color: #D37E57;
+    background-color: white;
+}
+
+.presentation_container {
+    display: flex;
+    background-color: white;
+}
+
+.inline_flex {
+    width: 100%;
+    display: flex;
+}
+
+.inline {
+    width: 100%;
+}
+
+.presentation_container_element {
+    display: flex;
+}
+
+.page_title {
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%; 
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.banniere {
+    width: 100vw;
+    height: 99vh;
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+}
+
+.banniere_img {
+    padding-top: 5%;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 58% 20% 20%;
+
+    column-gap: 2%;
+}
+
+.banniere_img_1 {
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.banniere_img_1:hover {
+    width: 101%;
+    height: 70%;
+    transition: 0.5s;
+}
+
+.banniere_img_2 {
+    margin-top: 30%;
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.banniere_img_2:hover {
+    width: 101%;
+    height: 70%;
+    transition: 0.5s;
+}
+
+.banniere_img_3 {
+    margin-top: 60%;
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+
+.banniere_img_3:hover {
+    width: 101%;
+    height: 70%;
+    transition: 0.5s;
+}
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    color: white;
+    opacity: 70%;
+    font-size: 15px;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banniere {
+        display: block;
+
+    }
+
+    .banniere_img {
+        display: none;
+    }
+
+    .inline {
+        display: flex;
+        width: 90%;
+    }
+
+    .center_container {
+        width: 80%;
+        margin-left: 10%;
+
+    }
+
+    .top {
+        width: 100vw;
+        height: 10vh;
+        top: 0;
+        display: grid;
+        grid-template-columns: 10% 85%;
+        column-gap: 5%;
+        align-items: center;
+    }
+
+    .top_right {
+        display: none;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    .searchbar {
+        width: 70%;
+    }
+}
